@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polytechnic University of the Philippines</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-side">
+        <img src="logo.png" alt="Image Alt Text" />
+        <h3>Polytechnic University of the Philippines</h3>
+      </div>
+
+      <div class="right-side">
+        <a href="pup.edu.ph">PUP Website</a>
+        <a href="#home">Home</a>
+      </div>
+    </div>
+
+    <div class="title">
+      <h1>APPLICATION FOR NEW/REPLACEMENT OF IDENTIFICATION CARD</h1>
+      <h3>
+        <br>
+        Complete all mandatory fields on this form before inquiring at the school for a replacement or new ID.
+      </br>
+      </h3>
+      
+    </div>
+
+    <!-- Put Navigational Bar (Optional) if it is suitable -->
+
+    <form
+      id="form"
+      method="post"
+      action="https://script.google.com/macros/s/AKfycbw36RvnqzL8SA9CX50uAbjggxcJJ3yOXNPkdyh0h3n8Rl7CpQxh9yr4Mhzuhbe0nVDQSw/exec"
+    >
+      <!--Issue Radio Button-->
+      <div class="container-new">
+        <div class="wrapper">
+            <div class="title">Select your option</div>
+            <div class="box">
+              <input type="radio" name="radio1" id="option-1" value="Transferee">
+              <input type="radio" name="radio1" id="option-2" value="Late Filling">
+              <input type="radio" name="radio1" id="option-3" value="Old ID">
+              <input type="radio" name="radio1" id="option-4" value="Damaged">
+              <input type="radio" name="radio1" id="option-5" value="Correction of Entry">
+              <input type="radio" name="radio1" id="option-6" value="Shiftee">
+          
+              <label for="option-1" class="option-1">
+                <div class="dot"></div>
+                <div class="text">Transferee</div>
+              </label>
+          
+              <label for="option-2" class="option-2">
+                <div class="dot"></div>
+                <div class="text">Late Filling</div>
+              </label>
+          
+              <label for="option-3" class="option-3">
+                <div class="dot"></div>
+                <div class="text">Old ID</div>
+              </label>
+          
+              <label for="option-4" class="option-4">
+                <div class="dot"></div>
+                <div class="text">Damaged</div>
+              </label>
+          
+              <label for="option-5" class="option-5">
+                <div class="dot"></div>
+                <div class="text">Correction of Entry</div>
+              </label>
+          
+              <label for="option-6" class="option-6">
+                <div class="dot"></div>
+                <div class="text">Shiftee</div>
+              </label>
+            </div>
+          </div>
+    <!--Department Radio Button-->
+    <div class="wrapper2">
+        <div class="title">Select your option</div>
+        <div class="box">
+            <input type="radio" name="radio2" id="LHS" value="LHS">
+            <input type="radio" name="radio2" id="SHS" value="SHS">
+            <input type="radio" name="radio2" id="Undergrad" value="Undergrad">
+            <input type="radio" name="radio2" id="CollegeOfLaw" value="CollegeOfLaw">
+            <input type="radio" name="radio2" id="GraduateSchool" value="GraduateSchool">
+            <input type="radio" name="radio2" id="OpenUniversity" value="OpenUniversity">
+            <input type="radio" name="radio2" id="InstituteOfTechnology" value="InstituteOfTechnology">
+    
+            <label for="LHS" class="option-LHS">
+                <div class="dot"></div>
+                <div class="text">LHS</div>
+            </label>
+    
+            <label for="SHS" class="option-SHS">
+                <div class="dot"></div>
+                <div class="text">SHS</div>
+            </label>
+    
+            <label for="Undergrad" class="option-Undergrad">
+                <div class="dot"></div>
+                <div class="text">Undergrad</div>
+            </label>
+    
+            <label for="CollegeOfLaw" class="option-CollegeOfLaw">
+                <div class="dot"></div>
+                <div class="text">College of Law</div>
+            </label>
+    
+            <label for="GraduateSchool" class="option-GraduateSchool">
+                <div class="dot"></div>
+                <div class="text">Graduate School</div>
+            </label>
+    
+            <label for="OpenUniversity" class="option-OpenUniversity">
+                <div class="dot"></div>
+                <div class="text">Open University</div>
+            </label>
+    
+            <label for="InstituteOfTechnology" class="option-InstituteOfTechnology">
+                <div class="dot"></div>
+                <div class="text">Institute of Technology</div>
+            </label>
+        </div>
+    </div>
+    </div>
+      <!--Personal Details-->
+      <div class="container3">
+        <h2 style="font-size: 25px;">Personal Information</h2>
+
+        <label for="StudentNumber">Student Number:</label>
+        <input
+          type="text"
+          name="StudentNumber"
+          pattern="^20\d{2}-\d{5}-[A-Z]{2}-\d$"
+          required
+          placeholder="XXXX-XXXXX-MN-X"
+        />
+
+        <label for="FirstName">First Name:</label>
+        <input type="text" name="FirstName" required />
+
+        <label for="MiddleName">Middle Name:</label>
+        <input type="text" name="MiddleName"/>
+
+        <label for="LastName">Last Name:</label>
+        <input type="text" name="LastName" required />
+
+        <div class="dropdownGender">
+          <label for="dropdownGender">Gender:</label>
+      
+          <select id="dropdownGender" name="dropdownGender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+          </select>
+      </div>
+        <label for="DateOfBirth">Date of Birth:</label>
+        <input type="date" name="DateOfBirth" required />
+
+        <label for="College">College</label>
+        <input type="text" name="College" required />
+
+        <label for="CourseYearSection">Course, Yr. & Section:</label>
+        <input type="text" name="CourseYearSection" required />
+
+        <label for="HomeAddress">Home Address:</label>
+        <input type="text" name="HomeAddress" required />
+
+        <label for="PhoneMobile">Phone/Mobile No.:</label>
+        <input
+          type="text"
+          name="PhoneMobile"
+          pattern="^\d{11}$"
+          title="Please enter a valid 11-digit contact number"
+          required
+        />
+
+        <label for="EmailAddress">Email Address:</label>
+        <input
+          type="text"
+          name="EmailAddress"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          title="Please enter a valid email address"
+          required
+        />
+      </div>
+      <!--Emergency Contact Details-->
+      <div class="container3">
+        <h2 style="font-size: 25px;">Emergency Details</h2>
+
+        <label for="ContactFirstName">First Name:</label>
+        <input type="text" name="ContactFirstName" required />
+
+        <label for="ContactMiddleName">Middle Name:</label>
+        <input type="text" name="ContactMiddleName"/>
+
+        <label for="ContactLastName">Last Name:</label>
+        <input type="text" name="ContactLastName" required />
+
+        <label for="ContactNumber">Contact Number:</label>
+        <input
+          type="text"
+          name="ContactNumber"
+          pattern="^\d{11}$"
+          title="Please enter a valid 11-digit contact number"
+          required
+        />
+
+        <label for="ContactAddress">Contact Address:</label>
+        <input type="text" name="ContactAddress" required />
+      </div>
+    </form>
+
+    <!--Submit Button-->
+    <button type="button" class="submit-btn" onclick="submitForm()">
+      Submit
+    </button>
+
+    <script>
+      function submitForm() {
+        // Get values from radio buttons
+        var radio1 = $('input[name="radio1"]:checked').val();
+        var radio2 = $('input[name="radio2"]:checked').val();
+
+        // Get values from input fields
+        var studentNumber = $('[name="StudentNumber"]').val();
+        var firstName = $('[name="FirstName"]').val();
+        var middleName = $('[name="MiddleName"]').val();
+        var lastName = $('[name="LastName"]').val();
+        var gender = $('input[name="dropdownGender"]:checked').val();
+        var dateOfBirth = $('[name="DateOfBirth"]').val();
+        var college = $('[name="College"]').val();
+        var courseYearSection = $('[name="CourseYearSection"]').val();
+        var homeAddress = $('[name="HomeAddress"]').val();
+        var phoneMobile = $('[name="PhoneMobile"]').val();
+        var emailAddress = $('[name="EmailAddress"]').val();
+
+        var contactFirstName = $('[name="ContactFirstName"]').val();
+        var contactMiddleName = $('[name="ContactMiddleName"]').val();
+        var contactLastName = $('[name="ContactLastName"]').val();
+        var contactNumber = $('[name="ContactNumber"]').val();
+        var contactAddress = $('[name="ContactAddress"]').val();
+
+        // Prepare data for Google Sheets
+        var formData = {
+          Issue: radio1,
+          Department: radio2,
+          StudentNumber: studentNumber,
+          FirstName: firstName,
+          MiddleName: middleName,
+          LastName: lastName,
+          Gender: gender,
+          DateOfBirth: dateOfBirth,
+          College: college,
+          CourseYearSection: courseYearSection,
+          HomeAddress: homeAddress,
+          PhoneMobile: phoneMobile,
+          EmailAddress: emailAddress,
+          ContactFirstName: contactFirstName,
+          ContactMiddleName: contactMiddleName,
+          ContactLastName: contactLastName,
+          ContactNumber: contactNumber,
+          ContactAddress: contactAddress,
+        };
+        alert('Form submitted successfully!');
+        // Optionally, reset the form after submission
+        $('#form')[0].reset();
+      }
+
+      // Validation functions
+      function validateStudentNumber(studentNumber) {
+        var pattern = /^20\d{2}-\d{5}-[A-Z]{2}-\d$/;
+        return pattern.test(studentNumber);
+      }
+
+      function validateEmailAddress(email) {
+        var pattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return pattern.test(email);
+      }
+
+      function validateContactNumber(contactNumber) {
+        var pattern = /^\d{11}$/;
+        return pattern.test(contactNumber);
+      }
+      function submitForm() {
+        event.preventDefault();
+        var confirmation = confirm('Are you sure you want to submit the form?');
+
+        if (confirmation) {
+          var form = document.getElementById('form');
+
+          // Submit the form
+          form.submit();
+
+          // Optionally, reset the form after submission
+          form.reset();
+
+          // Show an alert after submission
+          alert('Your response has been submitted');
+        }
+      }
+    </script>
+  </body>
+</html>
